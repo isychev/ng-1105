@@ -14,6 +14,9 @@ export class PlaceComponent {
   public places: IPlace[];
 
   @Input()
+  public currentPlace: IPlace;
+
+  @Input()
   public travelTypes: TTravelType;
 
   @Output()

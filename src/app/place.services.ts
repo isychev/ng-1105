@@ -10,7 +10,7 @@ export interface IPlace {
   phone: number;
   weather: {
     title: string,
-    icon: string,
+    img: string,
     water: number,
     temperature: number
   };
@@ -29,54 +29,54 @@ const getRandom = (): number => {
 
 const data: IPlace[] = [
   {
-    img: 'string',
+    img: '/assets/images/r1.jpg',
     address: 'sdfgsdfg',
     phone: getRandom(),
     weather: {
       title: 'sdfgsdfg',
-      icon: 'sdfgsdfg ',
+      img: '/assets/images/cloudy.png ',
       water: getRandom(),
       temperature: getRandom(),
     },
     social_info: {
       title: 'zxvzsd',
-      img: 'sertar',
+      img: '/assets/images/r1.jpg',
       followers: getRandom(),
       following: getRandom(),
     },
     type: travelTypes[0]
   },
   {
-    img: 'sdfgsdfg',
+    img: '/assets/images/b1.jpg',
     address: 'wertwc',
     phone: getRandom(),
     weather: {
       title: 'xcfgsdr',
-      icon: 'sdfh ',
+      img: '/assets/images/cloudy.png ',
       water: getRandom(),
       temperature: getRandom(),
     },
     social_info: {
       title: ' vsf ',
-      img: 'fsdabd',
+      img: '/assets/images/b1.jpg',
       followers: getRandom(),
       following: getRandom(),
     },
     type: travelTypes[1]
-  }
-  , {
-    img: 'sdhgsdbf',
+  },
+  {
+    img: '/assets/images/b1.jpg',
     address: 'sdfgsdf',
     phone: getRandom(),
     weather: {
       title: 'sdfg vcx',
-      icon: 'asdfsdf ',
+      img: '/assets/images/cloudy.png ',
       water: getRandom(),
       temperature: getRandom(),
     },
     social_info: {
       title: 'sdfgsdfgs',
-      img: 'dfbsdfb',
+      img: '/assets/images/b1.jpg',
       followers: getRandom(),
       following: getRandom(),
     },

@@ -3,6 +3,7 @@
   <div class="element-left">
     <app-place
       [places] = "places | async | placesFilter:currentTravelType"
+      [currentPlace] = "currentPlace"
       [travelTypes] = "travelTypes"
       (onSelectPlace)="handleSelectPlace($event)"
       (onSelectTravelType)="handleSelectTravelType($event)"
