@@ -1,16 +1,13 @@
-import {Observable, Observer, of} from 'rxjs';
+import {Observable, of} from 'rxjs';
 import {delay} from 'rxjs/operators';
-import {Injectable} from '@angular/core';
 
-
-export const travelTypes = ['Hotel', 'Fishing', 'Tours', 'Weather'];
-
-export type TTravelType = 'Hotel' | 'Fishing' | 'Tours' | 'Weather';
+export type TTravelType =  'Hotel' | 'Fishing' | 'Tours' | 'Weather';
+export const travelTypes: TTravelType[] = ['Hotel', 'Fishing', 'Tours', 'Weather'];
 
 export interface IPlace {
   img: string;
   address: string;
-  phone: number;   // дополнительно задание pipe для форматирования
+  phone: number;
   weather: {
     title: string,
     icon: string,
@@ -24,7 +21,6 @@ export interface IPlace {
     following: number
   };
   type: TTravelType;
-
 }
 
 const getRandom = (): number => {
@@ -92,20 +88,3 @@ export const places$: Observable<IPlace[]> = of(data)
   .pipe(
     delay(1000)
   );
-
-
-@Injectable()
-export class DemoService {
-
-  constructor() {
-  }
-
-  // Uses http.get() to load a single JSON file
-  getPlace() {
-    return of(data)
-      .pipe(
-        delay(3000)
-      );
-  }
-
-}

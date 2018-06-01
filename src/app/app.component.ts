@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IPlace, places$, travelTypes, TTravelType } from './place.services';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
 export class AppComponent {
   title = 'app';
   public places: Observable<IPlace[]> = places$;
-  public travelTypes: [TTravelType] = travelTypes ;
+  public travelTypes: TTravelType[] = travelTypes ;
   public currentTravelType: string;
   public currentPlace: IPlace;
 
