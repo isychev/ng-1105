@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { IPlace } from '../../place.services';
+import { IPlace } from '../place.services';
 
 @Pipe({
   name: 'placesFilter'
